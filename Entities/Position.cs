@@ -15,7 +15,7 @@ namespace Xadrez.Entities {
       }
 
       public bool isEven() {
-         return X + Y % 2 == 0;
+         return (X + Y) % 2 == 0;
       }
    }
 }

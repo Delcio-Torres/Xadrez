@@ -25,26 +25,16 @@ namespace Xadrez {
       /// the contents of this method with the code editor.
       /// </summary>
       private void InitializeComponent() {
-         this.groupBox1 = new System.Windows.Forms.GroupBox();
-
+         this.board = new Board();
          this.SuspendLayout();
-         // 
-         // groupBox1
-         // 
-         this.groupBox1.Location = new System.Drawing.Point(46, 38);
-         this.groupBox1.Name = "groupBox1";
-         this.groupBox1.Size = new System.Drawing.Size(583, 446);
-         this.groupBox1.TabIndex = 0;
-         this.groupBox1.TabStop = false;
-         this.groupBox1.Controls.Add(new Cell(new Position(0, 0)));
-         this.groupBox1.Controls.Add(new Cell(new Position(0, 1)));
+
          // 
          // Form1
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.ClientSize = new System.Drawing.Size(1091, 662);
-         this.Controls.Add(this.groupBox1);
+         this.Controls.Add(this.board);
          this.Name = "Form1";
          this.Text = "Form1";
          this.ResumeLayout(false);
@@ -53,7 +43,7 @@ namespace Xadrez {
 
       #endregion
 
-      private System.Windows.Forms.GroupBox groupBox1;
+      private Board board;
    }
 }
 
