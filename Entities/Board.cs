@@ -15,7 +15,7 @@ namespace Xadrez.Entities {
 
             var row = new List<Cell>(8);
             for (int col = 0; col < 8; col++) {
-               var cell = new Cell(new Position(col, rowNumber));
+               var cell = new Cell(this, new Position(col, rowNumber));
                this.Controls.Add(cell);
                row.Add(cell);
             }
