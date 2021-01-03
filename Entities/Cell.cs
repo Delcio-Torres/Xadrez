@@ -4,8 +4,8 @@ using Xadrez.Properties;
 
 namespace Xadrez.Entities {
    class Cell : PictureBox {
-      private static Image BLACK = Resources.square_black;
-      private static Image WHITE = Resources.square_white;
+      private static Image BLACK = Resources.square_brown;
+      private static Image WHITE = Resources.square_light_brown;
 
       public Position Position { get; set; }
 
