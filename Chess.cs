@@ -8,8 +8,8 @@ namespace Xadrez {
       public Chess() {
          InitializeComponent();
 
-         var boardX = Math.Abs(Width - board.Size.Width) / 2;
-         board.Location = new System.Drawing.Point(boardX, 0);
+         var boardX = Math.Abs(Width - board1.Size.Width) / 2;
+         board1.Location = new System.Drawing.Point(boardX, 0);
          Icon = Resources.icon;
       }
    }

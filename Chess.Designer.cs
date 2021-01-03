@@ -25,15 +25,24 @@ namespace Xadrez {
       /// the contents of this method with the code editor.
       /// </summary>
       private void InitializeComponent() {
-         this.board = new Xadrez.Entities.Board();
+         this.board1 = new Xadrez.Entities.Board();
          this.SuspendLayout();
+         // 
+         // board1
+         // 
+         this.board1.Location = new System.Drawing.Point(73, 75);
+         this.board1.Name = "board1";
+         this.board1.Size = new System.Drawing.Size(448, 448);
+         this.board1.TabIndex = 0;
+         this.board1.TabStop = false;
+         this.board1.Text = "board1";
          // 
          // Chess
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.ClientSize = new System.Drawing.Size(584, 661);
-         this.Controls.Add(this.board);
+         this.Controls.Add(this.board1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
          this.MaximizeBox = false;
          this.Name = "Chess";
@@ -45,7 +54,7 @@ namespace Xadrez {
 
       #endregion
 
-      private Board board;
+      private Board board1;
    }
 }
 

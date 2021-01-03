@@ -52,6 +52,16 @@
     <Compile Include="Entities\Cell.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Entities\Color.cs" />
+    <Compile Include="Entities\Piece.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entities\Pieces\Pawn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entities\Pieces\Rook.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Entities\Position.cs" />
     <Compile Include="Chess.cs">
       <SubType>Form</SubType>
