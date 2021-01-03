@@ -1,7 +1,7 @@
 ﻿using Xadrez.Entities;
 
 namespace Xadrez {
-   partial class Form1 {
+   partial class Chess {
       /// <summary>
       /// Required designer variable.
       /// </summary>
@@ -25,18 +25,20 @@ namespace Xadrez {
       /// the contents of this method with the code editor.
       /// </summary>
       private void InitializeComponent() {
-         this.board = new Board();
+         this.board = new Xadrez.Entities.Board();
          this.SuspendLayout();
-
          // 
-         // Form1
+         // Chess
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.ClientSize = new System.Drawing.Size(1091, 662);
+         this.ClientSize = new System.Drawing.Size(584, 661);
          this.Controls.Add(this.board);
-         this.Name = "Form1";
-         this.Text = "Form1";
+         this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+         this.MaximizeBox = false;
+         this.Name = "Chess";
+         this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+         this.Text = "Xadrez";
          this.ResumeLayout(false);
 
       }
